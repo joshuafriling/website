@@ -1,203 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Friling – IT Support Engineer</title>
-  <!-- add ?v=2 to bust any cached CSS -->
-  <link rel="stylesheet" href="styles.css?v=2" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Friling – IT Support Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- ================= HEADER / NAV ================= -->
-  <header class="site-header">
-    <div class="header-inner">
-      <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">Joshua Friling</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-
-    <!-- ================= HERO ================= -->
+    <!-- HERO SECTION -->
     <section class="hero">
-      <div class="hero-inner">
+        <div class="hero-content">
+            <h1>IT Support Engineer<br>Automation • Security</h1>
+            <p>I help teams create calm, dependable IT environments through automation, smart tooling, and security-minded device and identity management — so people can focus on the work that matters.</p>
 
-        <div class="hero-text">
-          <p class="hero-kicker">IT Support · Automation · Security</p>
-          <h1>Joshua Friling</h1>
-          <p class="hero-body">
-            I help teams create calm, dependable IT environments through automation, smart tooling,
-            and security-minded device and identity management — so people can focus on the work that matters.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#experience" class="btn btn-secondary">View Experience</a>
-          </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#experience" class="btn-secondary">View Experience</a>
+            </div>
         </div>
 
-        <div class="hero-image">
-          <img src="joshua-hero.jpg" alt="Joshua Friling smiling outdoors" />
+        <div class="hero-image-wrapper">
+            <img src="joshua-hero.jpg" alt="Joshua Friling" class="hero-image" />
         </div>
-
-      </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section section-light">
-      <div class="container">
-        <h2>About</h2>
-        <div class="split">
-          <p>
-            I'm an IT Support Engineer focused on building reliable, human-friendly experiences around devices,
-            identity, and collaboration tools. I enjoy designing repeatable workflows, documenting clearly,
-            and automating the “boring but important” parts of IT.
-          </p>
-          <div>
-            <h3>Currently exploring</h3>
-            <ul class="bullet-list">
-              <li>Security-minded IT automation</li>
-              <li>Better onboarding & offboarding flows</li>
-              <li>Small-business IT consulting</li>
-              <li>Home-lab experiments with TrueNAS & Docker</li>
-            </ul>
-          </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-light">
+        <div class="content">
+            <h2>About</h2>
+
+            <p>
+                I'm an IT Support Engineer focused on building reliable, human-friendly experiences 
+                around devices, identity, and collaboration tools. I enjoy designing repeatable workflows, 
+                documenting clearly, and automating the “boring but important” parts of IT.
+            </p>
+
+            <div class="exploring">
+                <h3>Currently exploring</h3>
+                <ul>
+                    <li>Security-minded IT automation</li>
+                    <li>Better onboarding & offboarding flows</li>
+                    <li>Small-business IT consulting</li>
+                    <li>Home-lab experiments with TrueNAS & Docker</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= EXPERIENCE ================= -->
-    <section id="experience" class="section section-dark-alt">
-      <div class="container">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-dark">
         <h2>Experience</h2>
 
-        <div class="card-grid">
-
-          <article class="card">
-            <div class="card-logo">
-              <img src="radai.png" alt="Rad AI logo" />
+        <div class="experience-grid">
+            <!-- Rad AI -->
+            <div class="exp-card">
+                <img src="radai.png" class="company-logo" alt="Rad AI Logo" />
+                <h3>Rad AI</h3>
+                <p class="role-title">IT Support Engineer • 2025 — Present</p>
+                <ul>
+                    <li>Support a remote-first team using macOS, JumpCloud, and Okta.</li>
+                    <li>Design and maintain workflows for onboarding, offboarding, and access.</li>
+                    <li>Manage SaaS tools including Slack, Zoom, Notion, and Google Workspace.</li>
+                    <li>Automate repetitive IT processes using scripting and workflow engines.</li>
+                </ul>
             </div>
-            <h3>Rad AI</h3>
-            <p class="card-role">IT Support Engineer · 2025 – Present</p>
-            <ul class="bullet-list">
-              <li>Support a remote-first team using macOS, JumpCloud, and Okta.</li>
-              <li>Design and maintain workflows for onboarding, offboarding, and RBAC.</li>
-              <li>Collaborate with security to keep devices and SaaS tools aligned with policy.</li>
-            </ul>
-          </article>
 
-          <article class="card">
-            <div class="card-logo">
-              <img src="infotrust.png" alt="InfoTrust logo" />
+            <!-- InfoTrust -->
+            <div class="exp-card">
+                <img src="infotrust.png" class="company-logo" alt="InfoTrust Logo" />
+                <h3>InfoTrust</h3>
+                <p class="role-title">IT Specialist • 2022 — 2024</p>
+                <ul>
+                    <li>Managed Apple devices with Jamf Pro and improved fleet reliability.</li>
+                    <li>Administered Google Workspace and identity workflows.</li>
+                    <li>Improved onboarding & offboarding with automation and documentation.</li>
+                    <li>Enhanced endpoint security and user experience across distributed teams.</li>
+                </ul>
             </div>
-            <h3>InfoTrust</h3>
-            <p class="card-role">IT Specialist · 2022 – 2024</p>
-            <ul class="bullet-list">
-              <li>Managed Apple devices with Jamf Pro and improved fleet reliability.</li>
-              <li>Administered Google Workspace and identity workflows.</li>
-              <li>Supported security efforts including MFA rollout and device compliance.</li>
-            </ul>
-          </article>
-
         </div>
-      </div>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section section-light">
-      <div class="container">
+    <!-- PROJECTS -->
+    <section id="projects" class="section-light">
         <h2>Projects</h2>
-
-        <div class="card-grid">
-
-          <article class="card">
-            <h3>Onboarding & Offboarding Automation</h3>
-            <p>
-              Built workflows to coordinate user lifecycle events across Okta, Google Workspace,
-              Slack, and device management — reducing manual work and errors.
-            </p>
-            <p class="tagline">Tools: n8n, Okta, Google Workspace, Slack</p>
-          </article>
-
-          <article class="card">
-            <h3>Slack Role & Access Sync</h3>
-            <p>
-              Designed a system aligning Slack user groups with identity roles so access to
-              channels and apps follows clear, documented rules.
-            </p>
-            <p class="tagline">Focus: RBAC, automation, IT enablement</p>
-          </article>
-
-          <article class="card">
-            <h3>Home Lab Storage & Services</h3>
-            <p>
-              Built a TrueNAS-based home lab with Docker services for media, monitoring,
-              and experimentation with ZFS and network performance tuning.
-            </p>
-            <p class="tagline">Tools: TrueNAS, Docker, ZFS, Plex</p>
-          </article>
-
-        </div>
-      </div>
+        <p>Showcase coming soon. This section will include workflow automation, Jamf tooling, Okta projects, and home-lab documentation.</p>
     </section>
 
-    <!-- ================= CERTIFICATIONS ================= -->
-    <section id="certifications" class="section section-dark-alt">
-      <div class="container">
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section-dark">
         <h2>Certifications</h2>
 
-        <div class="logo-grid">
-          <div class="logo-item">
-            <img src="A+-jpg.jpg" alt="CompTIA A+ logo" />
-            <p>CompTIA A+</p>
-          </div>
-          <div class="logo-item">
-            <img src="Network+-jpg.jpg" alt="CompTIA Network+ logo" />
-            <p>CompTIA Network+</p>
-          </div>
-          <div class="logo-item">
-            <img src="Security+-jpg.jpg" alt="CompTIA Security+ logo" />
-            <p>CompTIA Security+</p>
-          </div>
-          <div class="logo-item">
-            <img src="isc2-cc.jpg" alt="ISC2 Certified in Cybersecurity logo" />
-            <p>ISC2 CC</p>
-          </div>
+        <div class="cert-grid">
+            <img src="A+-jpg.jpg" class="cert-logo" alt="A+ Certification" />
+            <img src="Network+-jpg.jpg" class="cert-logo" alt="Network+ Certification" />
+            <img src="Security+-jpg.jpg" class="cert-logo" alt="Security+ Certification" />
+            <img src="isc2-cc.jpg" class="cert-logo" alt="ISC2 CC" />
         </div>
-      </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section section-light">
-      <div class="container contact">
-        <div>
-          <h2>Let’s connect</h2>
-          <p>
-            If you’re exploring IT improvements, automation ideas, or just want to compare
-            home-lab notes, I’d love to hear from you.
-          </p>
-        </div>
-        <div>
-          <a href="mailto:me@joshuafriling.com" class="btn btn-primary">Contact Me</a>
-        </div>
-      </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section-light">
+        <h2>Contact</h2>
+
+        <p>If you're exploring IT improvements, automation ideas, or just want to compare home-lab notes, I’d love to hear from you.</p>
+
+        <a href="mailto:me@joshuafriling.com" class="btn-primary">Contact Me</a>
     </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Joshua Friling</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>
