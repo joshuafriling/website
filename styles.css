@@ -484,5 +484,38 @@ img {
   margin-top: 60px;
 }
 
+/* ==============================
+   TILE COLOR LOGIC (FINAL FIX)
+   ============================== */
+
+/* Cream tiles → deep-olive text */
+.exp-card,
+.contact-tile-light, /* in case you add light tiles later */
+.any-cream-tile {
+  background: var(--cream) !important;
+  color: var(--deep-olive) !important;
+}
+
+.exp-card h3,
+.exp-card p,
+.exp-card li {
+  color: var(--deep-olive) !important;
+}
+
+/* Dark tiles → cream text */
+.card,
+.cert-item,
+.any-dark-tile {
+  background: var(--deep-olive-alt) !important;
+  color: var(--cream) !important;
+}
+
+.card h3,
+.card p,
+.card li,
+.cert-item h3,
+.cert-item p {
+  color: var(--cream) !important;
+}
 
 
