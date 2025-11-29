@@ -9,23 +9,19 @@
   --cream: #f5efe3;
   --cream-dark: #e8e0d2;
 
-  --olive-dark: #263422;
-  --olive-soft: #364735;
+  --olive-dark: #354e38;
+  --olive-soft: #3f5e46;
 
   --text-main: #1d231d;
-  --text-light: #f7f7f7;
+  --text-light: #ffffff;
 
   --radius-lg: 22px;
   --radius-md: 12px;
-  --radius-sm: 6px;
-
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
 
 
-/* =========================================================
-   RESET + BASE
-   ========================================================= */
+/* BASE RESET ------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +33,6 @@ body {
   background: linear-gradient(180deg, var(--olive-dark), var(--olive-soft));
   color: var(--text-light);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 img {
@@ -52,46 +47,42 @@ img {
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* NAVIGATION ------------------------------------------------ */
 .site-header {
-  background: var(--olive-dark);
   padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .nav-inner {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 92%;
-  max-width: 1200px;
-  margin: auto;
+  justify-content: center;
+  position: relative;
 }
 
 .brand {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--text-light);
+  text-align: center;
 }
 
-/* Hamburger button */
+/* Hamburger (aligned right) */
 .hamburger {
-  width: 32px;
-  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 20px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  cursor: pointer;
 }
 
 .hamburger span {
+  width: 28px;
   height: 3px;
   background: var(--text-light);
-  border-radius: 10px;
-  transition: 0.3s;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .hamburger.open span:nth-child(1) {
@@ -106,16 +97,16 @@ img {
 
 /* Mobile menu */
 .mobile-menu {
+  display: none;
   position: absolute;
-  top: 70px;
-  right: 20px;
+  right: 16px;
+  top: 65px;
   background: var(--olive-dark);
+  padding: 14px 20px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
-  display: none;
   flex-direction: column;
-  padding: 15px 20px;
-  width: 180px;
+  width: 170px;
 }
 
 .mobile-menu.open {
@@ -126,52 +117,45 @@ img {
   color: var(--text-light);
   text-decoration: none;
   padding: 10px 0;
-  font-weight: 500;
+  font-size: 16px;
 }
 
 .mobile-menu a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* HERO ------------------------------------------------ */
 .hero {
-  padding: 90px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
 }
 
 .hero-content {
   display: flex;
+  gap: 60px;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  max-width: 1150px;
-  gap: 60px;
 }
 
 .hero-text {
-  max-width: 500px;
+  max-width: 480px;
 }
 
 .hero-text h1 {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  color: #e5e5e5;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .hero-buttons {
   display: flex;
   gap: 16px;
+  margin-top: 20px;
 }
 
+/* Buttons - FIXED to use sage */
 .btn-primary {
   background: var(--sage);
   color: var(--text-main);
@@ -183,114 +167,76 @@ img {
 
 .btn-secondary {
   border: 2px solid var(--sage);
+  color: var(--sage);
   padding: 10px 22px;
   border-radius: var(--radius-md);
   text-decoration: none;
-  color: var(--sage);
   font-weight: 600;
 }
 
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
 .hero-image img {
-  width: 360px;
+  width: 340px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
 }
 
 
-/* =========================================================
-   ABOUT SECTION
-   ========================================================= */
+/* ABOUT ------------------------------------------------ */
 .about-section {
   background: var(--cream);
   color: var(--text-main);
-  padding: 80px 0;
-}
-
-.about-section h2 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  padding: 70px 0;
 }
 
 .about-layout {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-}
-
-.about-layout p {
-  flex: 1;
-  font-size: 17px;
-}
-
-.exploring h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  gap: 40px;
 }
 
 .exploring ul {
   list-style: none;
-  padding-left: 0;
-}
-
-.exploring li {
-  margin-bottom: 6px;
 }
 
 
-/* =========================================================
-   EXPERIENCE PAGE
-   ========================================================= */
-.experience-section {
-  background: var(--cream);
+/* CREDENTIALS ------------------------------------------------ */
+.credentials {
+  background: var(--cream-dark);
   color: var(--text-main);
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
-.experience-section h1 {
-  font-size: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: 600;
+.credentials h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+.cred-grid {
+  display: flex;
   gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.experience-card {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  box-shadow: var(--shadow-card);
+.cred-item {
+  text-align: center;
 }
 
-.company-logo {
-  width: 160px;
-  margin-bottom: 15px;
-}
-
-.experience-card h2 {
-  font-size: 26px;
-  margin-bottom: 4px;
-}
-
-.experience-card ul {
-  margin-top: 12px;
-  padding-left: 18px;
+.cred-item img {
+  width: 120px;
+  margin-bottom: 10px;
 }
 
 
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* RESPONSIVE ------------------------------------------------ */
 @media (max-width: 900px) {
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -301,9 +247,4 @@ img {
   .about-layout {
     flex-direction: column;
   }
-
-  .hero-image img {
-    width: 300px;
-  }
 }
-
