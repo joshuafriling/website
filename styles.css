@@ -156,7 +156,7 @@ img {
 }
 
 .section-dark {
-  background: var(--deep-olive-alt);
+  background: var(--deep-olive);
   color: var(--text-light);
 }
 
@@ -398,3 +398,37 @@ img {
     text-align: center;
   }
 }
+
+/* ===== CONTACT SECTION CENTERED ===== */
+.contact-section {
+  background: var(--cream);
+  text-align: center;
+}
+
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ===== RESUME SECTION CENTERED ===== */
+.resume-section {
+  background: var(--cream);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.resume-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Center buttons */
+.contact-inner .btn-primary,
+.resume-inner .btn-primary {
+  margin: 0 auto;
+}
+
