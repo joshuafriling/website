@@ -313,10 +313,15 @@ img {
 
 .contact-inner {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
   align-items: center;
+  justify-content: flex-start;
+  gap: 40px; /* brings button closer to the text */
 }
+
+.contact-inner .btn-primary {
+  margin-left: auto; /* pushes button neatly to the right */
+}
+
 
 .contact-inner p {
   max-width: 520px;
@@ -339,6 +344,18 @@ img {
   font-size: 1.05rem;
   padding: 12px 26px;
 }
+
+.resume-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.resume-inner .btn-primary {
+  margin-left: auto; /* lines up with Contact Me button */
+}
+
 
 /* ==============================
    FOOTER
