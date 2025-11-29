@@ -432,3 +432,57 @@ img {
   margin: 0 auto;
 }
 
+
+/* ==============================
+   UPDATED CERTIFICATION TILE COLORS
+   ============================== */
+
+.cert-item {
+  background: var(--deep-olive-alt) !important;
+  color: var(--cream) !important;
+}
+
+.cert-item h3,
+.cert-item p {
+  color: var(--cream) !important;
+}
+
+
+/* DARK SECTIONS → TEXT SHOULD BE CREAM */
+.section-dark,
+.section-dark h2,
+.section-dark h3,
+.section-dark p,
+.section-dark li {
+  color: var(--cream) !important;
+}
+
+/* LIGHT SECTIONS → TEXT SHOULD BE DEEP OLIVE */
+.section-light,
+.section-light h2,
+.section-light h3,
+.section-light p,
+.section-light li {
+  color: var(--deep-olive) !important;
+}
+
+
+/* CONTACT SPACING FIXES */
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* RESUME SPACING FIXES */
+.resume-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* SPACE ABOVE FOOTER */
+.site-footer {
+  margin-top: 60px;
+}
+
+
+
