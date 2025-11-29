@@ -6,9 +6,12 @@
   <title>Joshua Friling – IT Support Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- HERO -->
+  <!-- ==============================
+       HERO
+  ============================== -->
   <section class="hero">
     <div class="hero-inner">
 
@@ -39,10 +42,13 @@
 
   <main>
 
-    <!-- ABOUT -->
+    <!-- ==============================
+         ABOUT
+    ============================== -->
     <section id="about" class="section section-light">
       <div class="container">
         <h2>About Me</h2>
+
         <div class="about-grid">
           <div>
             <p>
@@ -74,7 +80,9 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- ==============================
+         EXPERIENCE
+    ============================== -->
     <section id="experience" class="section section-dark">
       <div class="container">
         <h2>Experience</h2>
@@ -82,7 +90,7 @@
         <div class="experience-grid">
 
           <!-- Rad AI -->
-          <article class="exp-card">
+          <article class="exp-card tile-light">
             <div class="exp-header">
               <img src="radai.png" alt="Rad AI logo" class="company-logo" />
               <div>
@@ -99,7 +107,7 @@
           </article>
 
           <!-- InfoTrust -->
-          <article class="exp-card">
+          <article class="exp-card tile-light">
             <div class="exp-header">
               <img src="infotrust.png" alt="InfoTrust logo" class="company-logo" />
               <div>
@@ -119,14 +127,16 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ==============================
+         PROJECTS
+    ============================== -->
     <section id="projects" class="section section-light">
       <div class="container">
         <h2>Projects</h2>
 
         <div class="card-grid">
 
-          <article class="card">
+          <article class="card tile-dark">
             <h3>Onboarding & Offboarding Automation</h3>
             <p>
               Designed automated flows to coordinate user lifecycle events across Okta,
@@ -136,7 +146,7 @@
             <p class="card-meta">Tools: n8n, Okta, Google Workspace, Slack</p>
           </article>
 
-          <article class="card">
+          <article class="card tile-dark">
             <h3>Slack Role & Access Alignment</h3>
             <p>
               Created a system to align Slack user groups with identity roles so access to
@@ -145,7 +155,7 @@
             <p class="card-meta">Focus: RBAC, documentation, IT enablement</p>
           </article>
 
-          <article class="card">
+          <article class="card tile-dark">
             <h3>Home Lab Storage & Services</h3>
             <p>
               Built a TrueNAS-based home lab using ZFS, Docker, and Portainer to host media,
@@ -159,32 +169,34 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
+    <!-- ==============================
+         CERTIFICATIONS
+    ============================== -->
     <section id="certifications" class="section section-dark">
       <div class="container">
         <h2>Certifications</h2>
 
         <div class="cert-grid">
 
-          <a href="#" class="cert-item">
+          <a href="#" class="cert-item tile-dark">
             <img src="A+-jpg.jpg" alt="CompTIA A+ badge" />
             <h3>CompTIA A+</h3>
             <p>Foundational certification covering hardware, troubleshooting, and core IT support skills.</p>
           </a>
 
-          <a href="#" class="cert-item">
+          <a href="#" class="cert-item tile-dark">
             <img src="Network+-jpg.jpg" alt="CompTIA Network+ badge" />
             <h3>CompTIA Network+</h3>
             <p>Validates networking concepts, cabling, routing, and troubleshooting in modern environments.</p>
           </a>
 
-          <a href="#" class="cert-item">
+          <a href="#" class="cert-item tile-dark">
             <img src="Security+-jpg.jpg" alt="CompTIA Security+ badge" />
             <h3>CompTIA Security+</h3>
             <p>Focuses on security fundamentals, risk management, access control, and incident response.</p>
           </a>
 
-          <a href="#" class="cert-item">
+          <a href="#" class="cert-item tile-dark">
             <img src="isc2-cc.jpg" alt="ISC2 Certified in Cybersecurity badge" />
             <h3>ISC2 CC (Certified in Cybersecurity)</h3>
             <p>Entry-level cybersecurity certification emphasizing security principles and best practices.</p>
@@ -194,37 +206,39 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-<section class="section-light contact-section" id="contact">
-  <div class="container contact-inner">
-    <div>
-      <h2>Let’s connect</h2>
-      <p>If you're exploring IT improvements, automation ideas, or just want to compare home-lab notes, I’d love to hear from you.</p>
-    </div>
+    <!-- ==============================
+         CONTACT
+    ============================== -->
+    <section id="contact" class="section section-light contact-section">
+      <div class="container contact-inner">
+        <div>
+          <h2>Let’s connect</h2>
+          <p>If you're exploring IT improvements, automation ideas, or just want to compare home-lab notes, I’d love to hear from you.</p>
+        </div>
 
-    <a href="mailto:me@joshuafriling.com" class="btn btn-primary">Contact Me</a>
-  </div>
-</section>
+        <a href="mailto:me@joshuafriling.com" class="btn btn-primary">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- ==============================
+         RESUME
+    ============================== -->
+    <section class="section section-light resume-section">
+      <div class="container resume-inner">
+        <div>
+          <h2>Resume</h2>
+          <p>You can download a PDF version of my resume below.</p>
+        </div>
+
+        <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+      </div>
+    </section>
 
   </main>
 
   <!-- ==============================
-     RESUME DOWNLOAD
-     ============================== -->
-<section class="section-light resume-section">
-  <div class="container resume-inner">
-    <div>
-      <h2>Resume</h2>
-      <p>You can download a PDF version of my resume below.</p>
-    </div>
-
-    <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
-  </div>
-</section>
-
-
-
-  <!-- FOOTER -->
+       FOOTER
+  ============================== -->
   <footer class="site-footer">
     <p>© <span id="year"></span> Joshua Friling • Built with a love for calm, secure IT</p>
   </footer>
