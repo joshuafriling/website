@@ -3,173 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Friling – IT Support & Automation</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Joshua Friling – IT Support Engineer</title>
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
+
 <body>
 
-  <!-- Navigation -->
+  <!-- NAV -->
   <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-name">Joshua Friling</a>
-
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="#contact" class="button button--primary nav-btn">Let’s Connect</a>
-      </nav>
-    </div>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:me@joshuafriling.com" class="connect-btn">Let’s Connect</a>
+    </nav>
   </header>
 
   <main>
 
     <!-- HERO -->
-    <section class="hero hero-centered">
-      <div class="container hero-container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Joshua Friling</h1>
 
-        <div class="hero-photo-large">
-          <img src="joshua-hero.jpg" alt="Photo of Joshua Friling">
-        </div>
+        <h2>IT Support Engineer · Automation · Security</h2>
 
-        <h1 class="hero-name">Joshua Friling</h1>
-        <p class="hero-title">IT Support Engineer • Automation • Security</p>
-
-        <p class="hero-subtitle">
+        <p>
           I help teams create calm, dependable IT environments through automation,
-          smart tooling, and security-minded device and identity management.
+          identity management, and thoughtful tooling—so people can focus on the work that matters.
         </p>
 
-        <div class="hero-actions">
-          <a href="projects.html" class="button button--primary">View Projects</a>
-          <a href="#about" class="button button--ghost">About Me</a>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn-primary">View Projects</a>
+          <a href="#about" class="btn-secondary">About Me</a>
         </div>
+      </div>
 
+      <div class="hero-right">
+        <img src="joshua-hero.jpg" alt="Photo of Joshua Friling">
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section section--light">
-      <div class="container about-grid">
+    <section id="about" class="section section-light">
+      <div class="about-grid">
 
         <div>
-          <h2>About Joshua</h2>
+          <h2>About Me</h2>
           <p>
-            I’m an IT Support Engineer focused on building reliable, human-friendly experiences
-            around devices, identity, and collaboration tools. I’ve spent years working with
-            Apple hardware, Google Workspace, and modern SaaS platforms—helping teams stay
-            secure without slowing them down.
+            I’m an IT Support Engineer focused on creating smooth, secure IT experiences for remote teams.
+            I specialize in Apple device management, Google Workspace, Okta identity flows,
+            and small-business automation.
           </p>
 
           <p>
-            Today I work at Rad AI, where I support a remote-first team using Jamf Pro,
-            JumpCloud, Okta, Slack, Zoom, and Notion. I enjoy designing repeatable workflows,
-            documenting processes clearly, and automating the “boring but important” parts of IT.
+            My approach is simple: reduce friction, increase clarity, and automate the repetitive things.
+            I enjoy building processes that feel effortless—without compromising security.
           </p>
         </div>
 
         <aside>
           <h3>Currently Exploring</h3>
-          <ul class="tag-list dark">
-            <li>Security-minded IT automation</li>
-            <li>Better onboarding & offboarding flows</li>
-            <li>Small-business IT consulting</li>
-            <li>Home-lab experiments with TrueNAS & Docker</li>
+          <ul class="tag-list">
+            <li>Security-focused IT automation</li>
+            <li>Role-based access flows with Okta & Slack</li>
+            <li>SaaS onboarding & offboarding improvements</li>
+            <li>Home lab workflows (TrueNAS, Docker, ZFS)</li>
           </ul>
         </aside>
 
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section">
-      <div class="container">
-        <h2>What I’m good at</h2>
-        <p class="section-subtitle">Blending people-first support with automation and security.</p>
-
-        <div class="grid grid--3">
-          <article class="card">
-            <h3>Core IT & Security</h3>
-            <ul class="card-list">
-              <li>macOS fleet management with Jamf Pro</li>
-              <li>Windows & Linux via JumpCloud</li>
-              <li>Okta SSO, MFA, and access policies</li>
-              <li>Google Workspace admin & hygiene</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Automation & Tooling</h3>
-            <ul class="card-list">
-              <li>n8n workflows for onboarding & offboarding</li>
-              <li>Slack user groups & access flows</li>
-              <li>Self-service IT with Notion</li>
-              <li>Home-lab services using Docker & TrueNAS</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>People & Process</h3>
-            <ul class="card-list">
-              <li>Calm, empathetic support</li>
-              <li>Clear documentation & training</li>
-              <li>Cross-functional collaboration</li>
-              <li>Internal IT enablement sessions</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- CERTIFICATIONS -->
-    <section class="section section--muted">
-      <div class="container">
-        <h2>Certifications & Professional Development</h2>
+    <section class="section section-muted">
+      <h2 class="center">Certifications</h2>
 
-        <div class="grid grid--4 cert-grid">
-
-          <div class="cert-logo-card">
-            <img src="assets/comptia-aplus.png" alt="CompTIA A+">
-          </div>
-
-          <div class="cert-logo-card">
-            <img src="assets/comptia-netplus.png" alt="CompTIA Network+">
-          </div>
-
-          <div class="cert-logo-card">
-            <img src="assets/comptia-secplus.png" alt="CompTIA Security+">
-          </div>
-
-          <div class="cert-logo-card">
-            <img src="assets/isc2-cc.png" alt="ISC2 CC Certification">
-          </div>
-
-        </div>
+      <div class="cert-grid">
+        <div class="cert-card"><img src="A+-jpg.jpg" alt="CompTIA A+"></div>
+        <div class="cert-card"><img src="Network+-jpg.jpg" alt="CompTIA Network+"></div>
+        <div class="cert-card"><img src="Security+-jpg.jpg" alt="CompTIA Security+"></div>
+        <!-- Add more logos if uploaded -->
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section--light">
-      <div class="container contact">
+    <section id="contact" class="section section-light">
+      <div class="contact-grid">
         <div>
-          <h2>Let’s work on something great</h2>
-          <p>Whether you're improving IT workflows, exploring automation, or modernizing your stack—I’d love to help.</p>
+          <h2>Let’s Work Together</h2>
+          <p>
+            Whether you're modernizing your IT stack, improving IT workflows,
+            or exploring automation—I’d love to help.
+          </p>
         </div>
 
-        <div class="contact-actions">
-          <a href="mailto:josue196@gmail.com" class="button button--primary">Email Me</a>
-          <a href="https://linkedin.com/in" target="_blank" class="button button--ghost">LinkedIn</a>
+        <div>
+          <a href="mailto:me@joshuafriling.com" class="btn-primary">Email Me</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Joshua Friling</span>
-      <span>Made with care and automation.</span>
-    </div>
+  <footer class="footer">
+    <p>© <span id="year"></span> Joshua Friling</p>
   </footer>
 
   <script>
