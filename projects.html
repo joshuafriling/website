@@ -4,92 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects – Joshua Friling</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
-<body class="page-projects">
 
-  <!-- Navigation -->
-  <header class="site-header site-header--solid">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-name">Joshua Friling</a>
+<body class="projects-page">
 
-      <nav class="nav">
-        <a href="index.html#about">About</a>
-        <a href="projects.html" class="nav-active">Projects</a>
-        <a href="index.html#contact" class="button button--primary nav-btn">Let’s Connect</a>
-      </nav>
-    </div>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="index.html#about">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="mailto:me@joshuafriling.com" class="connect-btn">Let’s Connect</a>
+    </nav>
   </header>
 
   <main>
-    <section class="section section--page-hero">
-      <div class="container">
-        <h1 class="hero-name">Projects & Case Studies</h1>
-        <p class="hero-subtitle">
-          A selection of professional IT, automation, and home-lab work.
-        </p>
-      </div>
+
+    <section class="section hero-small">
+      <h1>Projects & Case Studies</h1>
+      <p class="subtitle">A selection of systems, automations, and workflows I've built.</p>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="grid grid--2">
+      <div class="projects-grid">
 
-          <article class="card card--project">
-            <h2>Onboarding & Offboarding Automation</h2>
-            <p>
-              Designed automated onboarding and offboarding workflows using n8n,
-              coordinating Okta, Google Workspace, Slack, and device management.
-            </p>
-            <ul class="pill-list">
-              <li>n8n</li><li>Okta</li><li>Google Workspace</li><li>Automation</li>
-            </ul>
-          </article>
+        <article class="project-card">
+          <h2>Onboarding & Offboarding Automation</h2>
+          <p>
+            Built automated user lifecycle workflows across Okta, Google Workspace,
+            Slack, and device management using n8n.
+          </p>
+          <ul class="pill-list">
+            <li>n8n</li><li>Okta</li><li>Slack</li><li>Identity</li>
+          </ul>
+        </article>
 
-          <article class="card card--project">
-            <h2>Slack + Okta Role Sync</h2>
-            <p>
-              Built a scalable structure aligning Slack user groups with Okta roles,
-              improving targeting and reducing manual access management.
-            </p>
-            <ul class="pill-list">
-              <li>Slack</li><li>Okta</li><li>RBAC</li>
-            </ul>
-          </article>
+        <article class="project-card">
+          <h2>Slack Role Sync</h2>
+          <p>
+            Designed a scalable system aligning Slack user groups with Okta roles
+            to eliminate manual access requests.
+          </p>
+          <ul class="pill-list">
+            <li>Slack</li><li>RBAC</li><li>Automation</li>
+          </ul>
+        </article>
 
-          <article class="card card--project">
-            <h2>IT Fireside Q&A Sessions</h2>
-            <p>
-              Launched monthly internal sessions to teach tools, answer questions,
-              and build positive relationships across teams.
-            </p>
-            <ul class="pill-list">
-              <li>Knowledge Sharing</li><li>Notion</li><li>Enablement</li>
-            </ul>
-          </article>
+        <article class="project-card">
+          <h2>IT Fireside Q&A Sessions</h2>
+          <p>
+            Launched monthly internal IT sessions focused on empowerment,
+            clarity, and teaching good IT habits.
+          </p>
+          <ul class="pill-list">
+            <li>Enablement</li><li>Training</li><li>Culture</li>
+          </ul>
+        </article>
 
-          <article class="card card--project">
-            <h2>Home-Lab Media & Storage Platform</h2>
-            <p>
-              Built a TrueNAS-powered home lab with Docker containers for Plex,
-              backup flows, and automation.
-            </p>
-            <ul class="pill-list">
-              <li>TrueNAS</li><li>Docker</li><li>Plex</li><li>ZFS</li>
-            </ul>
-          </article>
+        <article class="project-card">
+          <h2>Home Lab Storage & Media Platform</h2>
+          <p>
+            Built a TrueNAS-based home lab with Docker services for media,
+            automation, remote access, and backups.
+          </p>
+          <ul class="pill-list">
+            <li>TrueNAS</li><li>Docker</li><li>ZFS</li><li>Plex</li>
+          </ul>
+        </article>
 
-        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Joshua Friling</span>
-      <span>Projects, experiments, and lessons along the way.</span>
-    </div>
+  <footer class="footer">
+    <p>© <span id="year"></span> Joshua Friling</p>
   </footer>
 
   <script>
