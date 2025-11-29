@@ -323,6 +323,24 @@ img {
 }
 
 /* ==============================
+   RESUME DOWNLOAD
+   ============================== */
+.resume-container {
+  text-align: center;
+  max-width: 700px;
+}
+
+.resume-container p {
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.resume-download-btn {
+  font-size: 1.05rem;
+  padding: 12px 26px;
+}
+
+/* ==============================
    FOOTER
    ============================== */
 .site-footer {
