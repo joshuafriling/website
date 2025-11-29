@@ -2,10 +2,10 @@
    COLOR SYSTEM
    ============================== */
 :root {
-  --deep-olive: #1E2B1C;
-  --deep-olive-alt: #23301F;
-  --sage: #3F5737;
-  --cream: #F2F1E4;
+  --deep-olive: #212B1F;
+  --deep-olive-alt: #334230;
+  --sage: #7A9974;
+  --cream: #ECE9D8;
   --text-light: #F7F7F2;
   --text-cream: #ECE9D8;
   --text-dark: #222222;
@@ -246,7 +246,7 @@ img {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--cream);
   border-radius: var(--radius-card);
   padding: 20px 22px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
