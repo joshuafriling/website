@@ -1,22 +1,22 @@
 /* ========================================
    COLOR SYSTEM
-   ========================================= */
+======================================== */
 :root {
   --deep-olive: #212B1F;        /* Dark section background */
   --deep-olive-alt: #334230;    /* Dark tile background */
-  --sage: #7A9974;              /* Accent button color */
-  --cream: #ECE9D8;             /* Light section + light tile background */
+  --sage: #7A9974;              /* Button accent */
+  --cream: #ECE9D8;             /* Light section + light tile */
 
-  --text-light: #F7F7F2;        /* Light text for dark backgrounds */
-  --text-dark: #222222;         /* Dark text for light backgrounds */
+  --text-light: #F7F7F2;        /* Text for dark backgrounds */
+  --text-dark: #222222;         /* Text for light backgrounds */
 
   --radius-card: 18px;
   --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
-/* =========================================
+/* ========================================
    RESET & BASE
-   ========================================= */
+======================================== */
 * {
   margin: 0;
   padding: 0;
@@ -34,25 +34,26 @@ body {
 
 img { max-width: 100%; display: block; }
 
-/* Generic container */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* =========================================
+/* ========================================
    SECTIONS
-   ========================================= */
+======================================== */
 .section {
   padding: 70px 0;
 }
 
+/* Light section → deep-olive text */
 .section-light {
   background: var(--cream);
   color: var(--deep-olive);
 }
 
+/* Dark section → cream text */
 .section-dark {
   background: var(--deep-olive);
   color: var(--cream);
@@ -63,36 +64,43 @@ img { max-width: 100%; display: block; }
   margin-bottom: 24px;
 }
 
-/* =========================================
-   TILE LOGIC — UNIVERSAL
-   ========================================= */
+/* ========================================
+   TILE SYSTEM (universal)
+======================================== */
+
+/* Light tile → cream background + deep-olive text */
 .tile-light {
   background: var(--cream);
   color: var(--deep-olive);
   border-radius: var(--radius-card);
-  box-shadow: var(--shadow-soft);
   padding: 22px 24px;
-}
-
-.tile-dark {
-  background: var(--deep-olive-alt);
-  color: var(--cream);
-  border-radius: var(--radius-card);
   box-shadow: var(--shadow-soft);
-  padding: 20px 22px;
 }
 
 .tile-light h3,
 .tile-light p,
-.tile-light li { color: var(--deep-olive); }
+.tile-light li {
+  color: var(--deep-olive);
+}
+
+/* Dark tile → deep-olive-alt background + cream text */
+.tile-dark {
+  background: var(--deep-olive-alt);
+  color: var(--cream);
+  border-radius: var(--radius-card);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-soft);
+}
 
 .tile-dark h3,
 .tile-dark p,
-.tile-dark li { color: var(--cream); }
+.tile-dark li {
+  color: var(--cream);
+}
 
-/* =========================================
+/* ========================================
    HERO
-   ========================================= */
+======================================== */
 .hero {
   background: var(--deep-olive);
   padding: 80px 0 90px;
@@ -108,9 +116,9 @@ img { max-width: 100%; display: block; }
 .hero-text { max-width: 540px; }
 
 .hero-kicker {
-  text-transform: uppercase;
   font-size: 0.8rem;
-  opacity: 0.8;
+  text-transform: uppercase;
+  opacity: 0.85;
   margin-bottom: 6px;
 }
 
@@ -123,12 +131,14 @@ img { max-width: 100%; display: block; }
 
 .hero-title {
   font-size: 1.3rem;
-  font-weight: 500;
   opacity: 0.9;
   margin-bottom: 18px;
 }
 
-.hero-body { margin-bottom: 28px; }
+.hero-body {
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
 
 .hero-buttons {
   display: flex;
@@ -136,7 +146,6 @@ img { max-width: 100%; display: block; }
   gap: 14px;
 }
 
-/* Hero image */
 .hero-image {
   width: 380px;
   border-radius: 24px;
@@ -144,9 +153,9 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-soft);
 }
 
-/* =========================================
+/* ========================================
    BUTTONS
-   ========================================= */
+======================================== */
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -155,23 +164,20 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.btn-primary {
   background: var(--sage);
   color: var(--deep-olive);
   box-shadow: var(--shadow-soft);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(0,0,0,0.28);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
 }
 
-/* =========================================
+/* ========================================
    ABOUT
-   ========================================= */
+======================================== */
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1.4fr;
@@ -186,9 +192,9 @@ img { max-width: 100%; display: block; }
   margin-right: 6px;
 }
 
-/* =========================================
-   EXPERIENCE
-   ========================================= */
+/* ========================================
+   EXPERIENCE GRID
+======================================== */
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -197,24 +203,24 @@ img { max-width: 100%; display: block; }
 
 .exp-header {
   display: flex;
-  gap: 16px;
   align-items: center;
+  gap: 16px;
 }
 
 .company-logo { max-height: 40px; }
 
-/* =========================================
+/* ========================================
    PROJECTS
-   ========================================= */
+======================================== */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
 }
 
-/* =========================================
+/* ========================================
    CERTIFICATIONS
-   ========================================= */
+======================================== */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -231,23 +237,24 @@ img { max-width: 100%; display: block; }
   margin: 0 auto 10px;
 }
 
-/* =========================================
+/* ========================================
    CONTACT & RESUME
-   ========================================= */
+======================================== */
 .contact-inner,
 .resume-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  text-align: center;
 }
 
 .contact-section { padding: 80px 0 40px; }
-.resume-section { padding: 60px 0 80px; }
+.resume-section  { padding: 60px 0 80px; }
 
-/* =========================================
+/* ========================================
    FOOTER
-   ========================================= */
+======================================== */
 .site-footer {
   background: #192714;
   text-align: center;
@@ -256,9 +263,9 @@ img { max-width: 100%; display: block; }
   margin-top: 40px;
 }
 
-/* =========================================
+/* ========================================
    RESPONSIVE
-   ========================================= */
+======================================== */
 @media (max-width: 900px) {
   .hero-inner {
     flex-direction: column-reverse;
@@ -266,6 +273,5 @@ img { max-width: 100%; display: block; }
   }
 
   .hero-image { width: 260px; }
-
   .about-grid { grid-template-columns: 1fr; }
 }
