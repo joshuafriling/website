@@ -7,30 +7,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-projects">
+
+  <!-- Navigation -->
   <header class="site-header site-header--solid">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">JF</span>
-        <span class="logo-text">Joshua Friling</span>
-      </a>
+      <a href="index.html" class="nav-name">Joshua Friling</a>
+
       <nav class="nav">
-        <a href="projects.html" class="nav-active">Projects</a>
         <a href="index.html#about">About</a>
-        <a href="index.html#insights">Insights</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="projects.html" class="nav-active">Projects</a>
+        <a href="index.html#contact" class="button button--primary nav-btn">Let’s Connect</a>
       </nav>
-      <a href="mailto:josue196@gmail.com" class="button button--primary button--small">Email me</a>
     </div>
   </header>
 
   <main>
     <section class="section section--page-hero">
       <div class="container">
-        <p class="eyebrow">Projects</p>
-        <h1>Things I’ve built, fixed, or improved.</h1>
+        <h1 class="hero-name">Projects & Case Studies</h1>
         <p class="hero-subtitle">
-          A mix of professional work, automation experiments, and home-lab setups.
-          The common thread: making systems more reliable, secure, and humane.
+          A selection of professional IT, automation, and home-lab work.
         </p>
       </div>
     </section>
@@ -38,125 +34,55 @@
     <section class="section">
       <div class="container">
         <div class="grid grid--2">
-          <!-- Project 1 -->
+
           <article class="card card--project">
             <h2>Onboarding & Offboarding Automation</h2>
             <p>
-              Created automation flows in n8n that coordinate Okta, Google Workspace,
-              Slack, and device management platforms. The workflows standardize account
-              creation, group membership, license assignment, and notifications.
+              Designed automated onboarding and offboarding workflows using n8n,
+              coordinating Okta, Google Workspace, Slack, and device management.
             </p>
             <ul class="pill-list">
-              <li>n8n</li>
-              <li>Okta</li>
-              <li>Google Workspace</li>
-              <li>Jamf Pro / JumpCloud</li>
+              <li>n8n</li><li>Okta</li><li>Google Workspace</li><li>Automation</li>
             </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> fewer access mistakes, clearer ownership,
-              and faster onboarding/offboarding for a remote-first company.
-            </p>
           </article>
 
-          <!-- Project 2 -->
           <article class="card card--project">
-            <h2>Slack + Okta Group Alignment</h2>
+            <h2>Slack + Okta Role Sync</h2>
             <p>
-              Helped design and support a structure where Slack user groups reflect
-              role-based access in Okta, simplifying channel membership and
-              notifications. This aligns IT, security, and team leads on “who should
-              see what.”
+              Built a scalable structure aligning Slack user groups with Okta roles,
+              improving targeting and reducing manual access management.
             </p>
             <ul class="pill-list">
-              <li>Slack</li>
-              <li>Okta</li>
-              <li>RBAC</li>
+              <li>Slack</li><li>Okta</li><li>RBAC</li>
             </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> easier channel management, better targeting
-              of announcements, and less manual user wrangling.
-            </p>
           </article>
 
-          <!-- Project 3 -->
           <article class="card card--project">
-            <h2>IT Fireside Q&amp;A Sessions</h2>
+            <h2>IT Fireside Q&A Sessions</h2>
             <p>
-              Launched recurring internal “IT Fireside” sessions to answer questions,
-              demo tools, and gather feedback from coworkers. Paired these with clear
-              Notion documentation and self-service resources.
+              Launched monthly internal sessions to teach tools, answer questions,
+              and build positive relationships across teams.
             </p>
             <ul class="pill-list">
-              <li>Knowledge sharing</li>
-              <li>Notion</li>
-              <li>Internal enablement</li>
+              <li>Knowledge Sharing</li><li>Notion</li><li>Enablement</li>
             </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> reduced repeat questions, stronger trust in
-              IT, and a friendlier culture around change.
-            </p>
           </article>
 
-          <!-- Project 4 -->
           <article class="card card--project">
-            <h2>Home-Lab Media & Backup Platform</h2>
+            <h2>Home-Lab Media & Storage Platform</h2>
             <p>
-              Built a home-lab on TrueNAS with ZFS storage and Docker containers
-              for Plex, SABnzbd, Radarr, Sonarr, and other services. Experimented
-              with networking, caching, and backup strategies.
+              Built a TrueNAS-powered home lab with Docker containers for Plex,
+              backup flows, and automation.
             </p>
             <ul class="pill-list">
-              <li>TrueNAS</li>
-              <li>Docker</li>
-              <li>Plex stack</li>
-              <li>ZFS</li>
+              <li>TrueNAS</li><li>Docker</li><li>Plex</li><li>ZFS</li>
             </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> a safe sandbox for testing ideas before
-              bringing them into production environments.
-            </p>
           </article>
 
-          <!-- Project 5 -->
-          <article class="card card--project">
-            <h2>MDM Migration at InfoTrust</h2>
-            <p>
-              Contributed to a device-management migration, helping move macOS
-              devices to a new MDM platform without disrupting end users. This
-              included planning, testing, and supporting colleagues through the switch.
-            </p>
-            <ul class="pill-list">
-              <li>MDM</li>
-              <li>Apple</li>
-              <li>Change management</li>
-            </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> smoother rollout and better visibility into
-              the Mac fleet for IT and security.
-            </p>
-          </article>
-
-          <!-- Project 6 -->
-          <article class="card card--project">
-            <h2>Small-Business IT Consulting (ongoing)</h2>
-            <p>
-              Helping small teams think through Google Workspace setup, device
-              management, and basic security hygiene. The goal is simple: fewer IT
-              surprises and more mental space to run their business.
-            </p>
-            <ul class="pill-list">
-              <li>Google Workspace</li>
-              <li>Apple & MDM</li>
-              <li>Security basics</li>
-            </ul>
-            <p class="project-meta">
-              <strong>Impact:</strong> lightweight, practical IT foundations that
-              grow with the business.
-            </p>
-          </article>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -164,9 +90,11 @@
       <span>© <span id="year"></span> Joshua Friling</span>
       <span>Projects, experiments, and lessons along the way.</span>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
