@@ -3,116 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Friling – IT Support Engineer</title>
-  <link rel="stylesheet" href="styles.css?v=13" />
+  <title>Joshua Friling</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <header class="site-header">
-    <nav class="main-nav">
-      <a href="#about">About</a>
+<!-- ================= NAVBAR WITH HAMBURGER ================= -->
+
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="brand">Joshua Friling</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
-      <a href="mailto:me@joshuafriling.com" class="connect-btn">Let’s Connect</a>
+      <a href="mailto:me@joshuafriling.com">Let's Connect</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
+<!-- ================= HERO ================= -->
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Joshua Friling</h1>
+<section class="hero">
+  <div class="hero-content">
 
-        <h2>IT Support Engineer · Automation · Security</h2>
+    <div class="hero-text">
+      <h1>IT Support Engineer<br />Automation • Security</h1>
+      <p>
+        I help teams create calm, dependable IT environments through automation, 
+        identity management, and thoughtful tooling — so people can focus on the work that matters.
+      </p>
 
-        <p>
-          I help teams create calm, dependable IT environments through automation,
-          identity management, and thoughtful tooling—so people can focus on the work that matters.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="projects.html" class="btn-primary">View Projects</a>
-          <a href="#about" class="btn-secondary">About Me</a>
-        </div>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="experience.html" class="btn-secondary">Experience</a>
       </div>
+    </div>
 
-      <div class="hero-right">
-        <img src="joshua-hero.jpg" alt="Photo of Joshua Friling">
+    <div class="hero-image">
+      <img src="joshua-hero.jpg" alt="Joshua Friling" />
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section">
+  <div class="container">
+    <h2>About Joshua</h2>
+
+    <div class="about-layout">
+      <p>
+        I'm an IT Support Engineer focused on building reliable, human-friendly experiences around
+        devices, identity, and collaboration tools. I enjoy designing workflows, documenting clearly,
+        and automating the “boring but important” parts of IT.
+      </p>
+
+      <div class="exploring">
+        <h3>Currently Exploring</h3>
+        <ul>
+          <li>Security-minded IT automation</li>
+          <li>Better onboarding & offboarding flows</li>
+          <li>Small-business IT consulting</li>
+          <li>Home-lab experiments with TrueNAS & Docker</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section section-light">
-      <div class="about-grid">
-
-        <div>
-          <h2>About Me</h2>
-          <p>
-            I’m an IT Support Engineer focused on creating smooth, secure IT experiences for remote teams.
-            I specialize in Apple device management, Google Workspace, Okta identity flows,
-            and small-business automation.
-          </p>
-
-          <p>
-            My approach is simple: reduce friction, increase clarity, and automate the repetitive things.
-            I enjoy building processes that feel effortless—without compromising security.
-          </p>
-        </div>
-
-        <aside>
-          <h3>Currently Exploring</h3>
-          <ul class="tag-list">
-            <li>Security-focused IT automation</li>
-            <li>Role-based access flows with Okta & Slack</li>
-            <li>SaaS onboarding & offboarding improvements</li>
-            <li>Home lab workflows (TrueNAS, Docker, ZFS)</li>
-          </ul>
-        </aside>
-
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section section-muted">
-      <h2 class="center">Certifications</h2>
-
-      <div class="cert-grid">
-        <div class="cert-card"><img src="A+-jpg.jpg" alt="CompTIA A+"></div>
-        <div class="cert-card"><img src="Network+-jpg.jpg" alt="CompTIA Network+"></div>
-        <div class="cert-card"><img src="Security+-jpg.jpg" alt="CompTIA Security+"></div>
-        <div class="cert-card"><img src="isc2-cc.jpg" alt="ISC2 CC"></div>
-        <!-- Add more logos if uploaded -->
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-light">
-      <div class="contact-grid">
-        <div>
-          <h2>Let’s Work Together</h2>
-          <p>
-            Whether you're modernizing your IT stack, improving IT workflows,
-            or exploring automation—I’d love to help.
-          </p>
-        </div>
-
-        <div>
-          <a href="mailto:me@joshuafriling.com" class="btn-primary">Email Me</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Joshua Friling</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    </div>
+  </div>
+</section>
 
 </body>
+
 </html>
